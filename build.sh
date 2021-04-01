@@ -14,7 +14,6 @@ TARGET=recoveryimage
 
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
-export SHRP_DARK := true # fuck your dark theme.
 lunch omni_$DEVICE-eng
 mka $TARGET -j48
 
