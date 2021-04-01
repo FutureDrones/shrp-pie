@@ -3,7 +3,7 @@ name: Recovery building
 
 steps:
  - name: Build
-   image: starlight2834/ci_docker:latest
+   image: apon77/aosp:latest
    environment:
      token:
        from_secret: token

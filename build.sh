@@ -4,7 +4,7 @@
 
 cd /drone/src/work/
 # Clone tree START
-git clone https://github.com/henloscape/omni_device_xiaomi_lancelot device/xiaomi/lancelot/
+git clone https://github.com/henloscape/omni_device_xiaomi_lancelot -b shrp device/xiaomi/lancelot/
 # CLONE TREE END
 
 # VARIABLES, DEFINE THEM ELSE YOU'RE GAY
@@ -14,6 +14,7 @@ TARGET=recoveryimage
 
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
+export SHRP_DARK := true # fuck your dark theme.
 lunch omni_$DEVICE-eng
 mka $TARGET -j48
 
@@ -22,7 +23,8 @@ cd out/target/product/$DEVICE/
 touch links.txt
 echo "Recovery image on wetransfer: " >> links.txt
 transfer wet recovery.img  | grep Download >> links.txt
-
+echo "Flashable zip link:" >> links.txt 
+transfer wet SHRP_v3*.zip | grep Download >> links.txt 
 echo ""
 echo ""
 echo ""
