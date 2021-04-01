@@ -1,8 +1,10 @@
 #!/bin/bash
 clear
 
-mkdir /drone/src/work/
+sudo mkdir /drone/src/work/
 cd /drone/src/work/
+
+sudo chmod -R 0777 .
 
 repo init -q --no-repo-verify --depth=1 -u git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0 -g default,-device,-mips,-darwin,-notdefault
 
