@@ -11,4 +11,4 @@ repo init -q --no-repo-verify --depth=1 -u git://github.com/SHRP/platform_manife
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 30 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 8
 
 curl -sL https://git.io/file-transfer | sh
-cp -fpr transfer /bin/
+sudo cp -fpr transfer /bin/
