@@ -92,6 +92,5 @@ echo ""
 echo ""
 echo ""
 echo ""
-echo ""
 echo "" 
 cat links.txt 
