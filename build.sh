@@ -4,11 +4,11 @@
 
 cd /drone/src/work/
 # Clone tree START
-git clone https://github.com/henloscape/omni_device_xiaomi_lancelot -b shrp device/xiaomi/lancelot/
+git clone https://github.com/JamieHoSzeYui/device_xiaomi_sakura_twrp device/xiaomi/sakura 
 # CLONE TREE END
 
 # VARIABLES, DEFINE THEM ELSE YOU'RE GAY
-DEVICE=lancelot
+DEVICE=sakura
 TARGET=recoveryimage
 # END VARIABLES
 
