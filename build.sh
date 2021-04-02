@@ -5,7 +5,7 @@
 cd /drone/src/work/
 # Clone tree START
 git clone https://github.com/JamieHoSzeYui/device_xiaomi_sakura_twrp device/xiaomi/sakura 
-git clone --depth=1 --single-branch https://github.com/mahajant99/kernel_xiaomi_msm8953-sakura kenrel/xiaomi/sakura
+git clone --depth=1 --single-branch https://github.com/mahajant99/kernel_xiaomi_msm8953-sakura kernel/xiaomi/sakura
 # CLONE TREE END
 
 # VARIABLES, DEFINE THEM ELSE YOU'RE GAY
